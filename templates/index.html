@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		
+	<title>Captura del INE</title>
+
+	</head>
+	
+	<body class = "container">
+	
+	<style>
+		.btn {
+		display: inline-block;
+		background-color: #ff7b00;
+		color: #ffffff;
+		padding: 6px 10px;
+		border-radius: 4px;
+		font-size: 16px;
+		cursor: pointer;
+		}
+	
+		.btn:hover {
+		filter: brightness(0.9);
+		}
+	</style>
+	<h1>Verificación del INE</h1>
+	
+	
+	<h4> Instrucciones para la adecuada captura digital del INE </h4>
+		<p>	1. Seleccionar el boton de "Abrir Cámara".</p>
+		<p>	2. Elegir la cámara trasera y girar el celular de manera horizontal, se recomienda NO utilizar flash ni colocarse debajo de una 
+			lampara incandescente, se debe colocar el INE con la parte reversa hacia arriba en un fondo oscuro para tomar la fotografía y posteriormente dar click en "Aceptar". 
+			</p>
+		<p>	3. Selecionar el boton "Verificar". </p>
+	<form method="post" action="/" enctype="multipart/form-data">
+		
+			
+			<label for="cameraFileInput" class="btn">
+				Abrir Cámara : 
+			</label>
+			<input type="file" name = "file"  style="visibility:hidden;" id="cameraFileInput" accept="image/*" capture="environment" />
+			<input type="submit" value="Verificar" style="background-color: #00b531; color: white; display: inline-block;  border-radius: 4px;">
+
+	</form>
+	
+	</body>
+</html>
